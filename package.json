@@ -1,0 +1,29 @@
+{
+  "name": "js-print-tickertape",
+  "version": "0.0.1",
+  "author": "by zhizhuo <1543057945@qq.com> (https://github.com/154305)",
+  "description": "以html的方式生成打印凭条机器适用的图片",
+  "keywords": "js-print-tickertape",
+  "homepage": "https://github.com/154305/js-print-tickertape",
+  "repository": "154305/js-print-tickertape",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "install:examples": "cd examples/web & yarn & cd ../taro & yarn",
+    "build": "tsup",
+    "ps": "node ./scripts/publish.ts",
+    "start:web": "cd examples/web & npm run dev",
+    "start:taro": "cd examples/taro & npm run dev:weapp"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  }
+}
