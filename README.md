@@ -11,7 +11,8 @@ or
 yarn add js-print-tickertape
 ```
 ```typescript
-//base64
+import {generate} from 'js-print-tickertape'
+//生成bmp形式的base64图片
 let data = await generate(`
                                 <div style="height: auto;width: 300px;padding:20px;display: flex;flex-direction:column;align-items: center;border: 1px #000 solid">
                                     <h1 style="display: inline-block">打印凭条测试</h1>
